@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Executor</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Upload Code and Input Files</h1>
+    <form action="/execute" method="post" enctype="multipart/form-data" class="mt-4">
+      <div class="form-group">
+        <label for="code">Code File:</label>
+        <input type="file" class="form-control" id="code" name="code" required>
+      </div>
+      <div class="form-group">
+        <label for="input">Input File:</label>
+        <input type="file" class="form-control" id="input" name="input" required>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Execute</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
